@@ -1,0 +1,83 @@
+body {
+  font-family: Arial, sans-serif;
+    background-color: #151d27;
+    color: white;
+    margin: 1rem;
+}
+
+.container {
+  width: 45vw;
+  min-width: 500px;
+  margin: auto;
+}
+
+
+h2 {
+  margin-top: 2rem;
+}
+
+p {
+  color: #c5c5c5;
+}
+
+img {
+  width: 45vw;
+  min-width: 400px;
+}
+
+figure {  
+  margin: auto;
+  margin-block: 2rem;
+  width: min-content;
+}
+
+figcaption {
+  font-size: small;
+  color: #6e6e6e;
+  margin-top: 5px;
+}
+
+/* main page */
+
+.tasks {
+  margin-top: 1.5rem;
+  display: flex;
+  gap: 3rem;
+}
+
+.task {
+  font-size: x-large;
+  color: inherit;
+  text-decoration: none;
+  padding: 0.7rem 1rem;
+  background-color: #2a394d;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.task:hover {
+  background-color: #212c3b;
+}
+
+
+.name-holder {
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+}
+
+.container-main {
+  margin: auto;
+  height: 96vh;
+  min-width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  font-size: 5rem;
+  margin: 0 0 2rem 0;
+}

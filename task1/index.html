@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles.css" />
+    <title>Task 1</title>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Theoretical Part</h2>
+
+      <h3>ISO/OSI model and protocol assignment</h3>
+
+      <p>
+        The ISO/OSI model is a conceptual framework used to standardize and
+        understand the functions and interactions of network protocols and
+        devices. It consists of seven layers, each with specific
+        responsibilities to transmit the data.
+      </p>
+
+      <figure>
+        <img src="./screenshots/fig1.svg" alt="OSI 7 layers model" />
+        <figcaption>Fig. 1. OSI 7 layers model</figcaption>
+      </figure>
+
+      <h4>Physical Layer (Layer 1):</h4>
+      <p>
+        This layer deals with the physical medium, such as cables and
+        connectors. It is responsible for the transmission and reception of raw
+        data bits over a physical medium.
+      </p>
+      <p><strong>Data Unit:</strong> Bit</p>
+      <p>
+        <strong>Protocols:</strong> Bluetooth, IEEE 1394, IEEE 802.11, RS-232,
+        RS-449, USB
+      </p>
+
+      <h4>Data Link Layer (Layer 2):</h4>
+      <p>
+        This layer is responsible for data framing, error detection, and
+        addressing. It ensures reliable point-to-point and point-to-multipoint
+        communication over a physical medium.
+      </p>
+      <p><strong>Data Unit:</strong> Frame</p>
+      <p><strong>Protocols:</strong> ARP, L2TP, SLIP</p>
+
+      <h4>Network Layer (Layer 3):</h4>
+      <p>
+        The network layer handles routing and addressing. It's responsible for
+        packet forwarding and addressing using logical addressing (e.g., IP
+        addresses).
+      </p>
+      <p><strong>Data Unit:</strong> Packet</p>
+      <p><strong>Protocols:</strong> ICMP, IGMP, IPv4, IPv6</p>
+
+      <h4>Transport Layer (Layer 4):</h4>
+      <p>
+        The transport layer is responsible for end-to-end communication. It
+        provides error detection, flow control, and segmentation and reassembly
+        of data.
+      </p>
+      <p><strong>Data Unit:</strong> Segment</p>
+      <p><strong>Protocols:</strong> TCP, UDP</p>
+
+      <h4>Session Layer (Layer 5):</h4>
+      <p>
+        The session layer establishes, maintains, and terminates connections or
+        sessions between applications. It also manages synchronization and
+        dialog control.
+      </p>
+      <p><strong>Data Unit:</strong> Data</p>
+      <p><strong>Protocols:</strong> NetBIOS</p>
+
+      <h4>Presentation Layer (Layer 6):</h4>
+      <p>
+        This layer handles data translation, encryption, and compression,
+        ensuring that the data sent and received is in a format that can be
+        understood by both parties.
+      </p>
+      <p><strong>Data Unit:</strong> Data</p>
+      <p><strong>Protocols:</strong> SSL, TLS</p>
+
+      <h4>Application Layer (Layer 7):</h4>
+      <p>
+        The application layer is where end-user applications interact with the
+        network. It provides services and interfaces for application-level
+        functions like email, file transfer, and remote access.
+      </p>
+      <p><strong>Data Unit:</strong> Data</p>
+      <p>
+        <strong>Protocols:</strong> DHCP, DNS, FTP, RTP, HTTP, MIME, NNTP, SIP,
+        Telnet
+      </p>
+
+      <h2>Practical Part</h2>
+
+      <h3>
+        2.1 Use PuTTY client to connect to the web server: studife.it.p.lodz.pl
+        using the appropriate protocol
+      </h3>
+
+      <figure>
+        <img
+          src="./screenshots/fig2.png"
+          alt="Configuration of session in PuTTY client"
+        />
+        <figcaption>
+          Fig. 2. Configuration of session in PuTTY client
+        </figcaption>
+      </figure>
+      <figure>
+        <img
+          src="./screenshots/fig3.png"
+          alt="Successful login to the account "
+        />
+        <figcaption>Fig. 3. Successful login to the account</figcaption>
+      </figure>
+
+      <h3>2.2 Download the webpage using GET html command</h3>
+
+      <figure>
+        <img
+          src="./screenshots/fig4.png"
+          alt="Download of the page using Telnet protocol"
+        />
+        <figcaption>
+          Fig. 4. Download of the page using Telnet protocol
+        </figcaption>
+      </figure>
+      <h3>2.3. Copy the result to the local file.</h3>
+
+      <p>Using 'wget' command:</p>
+
+      <figure>
+        <img
+          src="./screenshots/fig5.png"
+          alt="A computer screen with white text"
+        />
+        <figcaption>Fig. 5. GET command to download the page</figcaption>
+      </figure>
+
+      <p>From the browser:</p>
+
+      <p>
+        Using Google Chrome by pressing "CTRL + O" on the keyboard (while being
+        on the site), we can easily copy the results to the local file. One has
+        to provide information about the future location of the file. After
+        those actions, the file can be easily accessed from the file explorer.
+      </p>
+
+      <h3>2.4. Display the file in the browser from the local disk.</h3>
+
+      <figure>
+        <img
+          src="./screenshots/fig6.png"
+          alt="A computer screen with a black background"
+        />
+        <figcaption>
+          Fig. 6. Page displayed in the browser from the local file.
+        </figcaption>
+      </figure>
+
+      <h3>
+        2.5. Use ping to check connection to the web server. Use Wireshark to
+        find and list all protocols which are used during this communication.
+      </h3>
+
+      <figure>
+        <img
+          src="./screenshots/fig7.png"
+          alt="A computer screen with white text"
+        />
+        <figcaption>
+          Fig. 7. Result of using ping command to check the connection.
+        </figcaption>
+      </figure>
+
+      <figure>
+        <img
+          src="./screenshots/fig8.png"
+          alt="A screenshot of Wireshark listing of the protocols used during communication"
+        />
+        <figcaption>
+          Fig. 8. Wireshark listing of the protocols used during communication.
+        </figcaption>
+      </figure>
+
+      <h3>
+        2.6. Use FTP protocol to upload your webpage to the server. Use
+        Wireshark to find your password and list all protocols used during this
+        communication. Assign the above-mentioned protocols to ISO/OSI layers.
+      </h3>
+
+      <figure>
+        <img
+          src="./screenshots/fig9.png"
+          alt="A screenshot of WinSCP configuration of FTP connection"
+        />
+        <figcaption>Fig. 9. WinSCP configuration of FTP connection.</figcaption>
+      </figure>
+
+      <figure>
+        <img
+          src="./screenshots/fig10.png"
+          alt="A screenshot of WinSCP login window"
+        />
+        <figcaption>Fig. 10. WinSCP login window.</figcaption>
+      </figure>
+
+      <figure>
+        <img
+          src="./screenshots/fig11.png"
+          alt="A screenshot of successful connection to the server. List of uploaded folders."
+        />
+        <figcaption>
+          Fig. 11. Successful connection to the server. List of uploaded
+          folders.
+        </figcaption>
+      </figure>
+
+      <figure>
+        <img
+          src="./screenshots/fig12.png"
+          alt="A screenshot of successful upload of new files to the server"
+        />
+        <figcaption>
+          Fig. 12. Successful upload of new files to the server.
+        </figcaption>
+      </figure>
+
+      <figure>
+        <img
+          src="./screenshots/fig13.png"
+          alt="A screenshot of Wireshark listings during the packets upload with blurred out PASS"
+        />
+        <figcaption>
+          Fig. 13. Wireshark listings during the packets upload with blurred out
+          PASS.
+        </figcaption>
+      </figure>
+
+      <h3>
+        2.7. Use SCP, SFTP, and SCP protocols to upload your webpage to the
+        server. Use Wireshark and try to find your password. List all protocols
+        used during this communication. Assign the above-mentioned protocols to
+        ISO/OSI layers.
+      </h3>
+
+      <p>We configured the SFTP connection.</p>
+      <figure>
+        <img
+          src="./screenshots/fig14.png"
+          alt="WinSCP SFTP connection configuration"
+        />
+        <figcaption>
+          Fig. 14. Configuration of the SFTP connection in WinSCP.
+        </figcaption>
+      </figure>
+
+      <p>
+        However, there was an authentication process while connecting, as
+        opposed to the SFTP connection.
+      </p>
+
+      <figure>
+        <img src="./screenshots/fig15.png" alt="Logging in window" />
+        <figcaption>Fig. 15. Logging in window.</figcaption>
+      </figure>
+
+      <p>We moved our files.</p>
+
+      <figure>
+        <img
+          src="./screenshots/fig16.png"
+          alt="Successful upload of the files"
+        />
+        <figcaption>Fig. 16. Successful upload of the files.</figcaption>
+      </figure>
+
+      <p>
+        We were running Wireshark during the whole operation. We could see that
+        the connection is encrypted, and therefore, we could not see the
+        username or password. During the connection, these protocols were used:
+        Ethernet II, IPv4, TCP, Transfer Layer Security (TLS, here TLSv1.2).
+        Ethernet II belongs to the Physical and Data Link layer, IPv4 - to the
+        Network layer, TCP - to the Transport layer, and TLS is in the
+        Presentation layer.
+      </p>
+
+      <figure>
+        <img src="./screenshots/fig17.jpg" alt="Wireshark SFTP listings" />
+        <figcaption>Fig. 17. Wireshark listings.</figcaption>
+      </figure>
+
+      <p>We configured the SCP connection.</p>
+      <figure>
+        <img
+          src="./screenshots/fig18.png"
+          alt="WinSCP SCP connection configuration"
+        />
+        <figcaption>
+          Fig. 18. Configuration of the SCP connection in WinSCP.
+        </figcaption>
+      </figure>
+
+      <p>There was an authentication process while connecting as well.</p>
+
+      <figure>
+        <img src="./screenshots/fig15.png" alt="Logging in window" />
+        <figcaption>Fig. 19. Logging in window.</figcaption>
+      </figure>
+
+      <p>
+        We were running Wireshark during the whole operation. We could see that
+        the connection is encrypted as it uses SSHv2 protocol. We could see that
+        during the connection Ethernet II, IPv4, TCP, and Secure Shell Protocol
+        (SSH, here SSHv2) protocols were used. Ethernet II belongs to the
+        Physical and Data Link layer, IPv4 - to the Network layer, TCP - to the
+        Transport layer, and SSH belongs to the Application layer.
+      </p>
+
+      <figure>
+        <img src="./screenshots/fig20.jpg" alt="Wireshark SCP listings" />
+        <figcaption>Fig. 20. Wireshark listings.</figcaption>
+      </figure>
+
+      <h3>2.8. Explain the protocols used for files transfer.</h3>
+
+      <p>
+        The protocols used for file transfer include FTP (File Transfer
+        Protocol), which is a standard protocol for transferring files between a
+        client and a server. However, it's important to note that FTP does not
+        ensure security as it transfers data, including usernames and passwords,
+        in plain text. For secure file transfer, it is recommended to use
+        protocols such as SFTP (SSH File Transfer Protocol) or FTPS (FTP
+        Secure). These secure protocols provide encryption and authentication,
+        enhancing the confidentiality and integrity of the transmitted data.
+      </p>
+
+      <h3>
+        2.9. Explain the rules concerning the files display by the web server
+        (default names which block the folder listing display).
+      </h3>
+
+      <p>
+        Web servers often have default files (e.g., index.html) that are
+        displayed when accessing a directory. These default files prevent the
+        listing of directory contents and enhance security by only showing
+        specific files. Additionally, web servers may have configurations to
+        block directory listing for security reasons.
+      </p>
+
+      <h3>
+        2.10. Display your webpage in the web browser. List the protocols which
+        were involved in the files transfer.
+      </h3>
+
+      <p>
+        To display the webpage in the web browser, various protocols are
+        involved, including HTTP (Hypertext Transfer Protocol) for transferring
+        web pages. Additionally, if secure connections are used, HTTPS (HTTP
+        Secure) may be involved, providing a secure and encrypted communication
+        channel.
+      </p>
+    </div>
+  </body>
+</html>
