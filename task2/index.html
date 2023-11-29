@@ -1,261 +1,262 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../styles.css" />
-    <title>Task 2</title>
-  </head>
-  <body>
-    <div class="container">Task 2</div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../styles.css" />
+  <title>Task 2</title>
+</head>
+<body>
+  <div class="container">    
+    <h2>Theoretical Part </h2>
+    <section>
+      <h3>1.1 Ethernet Standards for Physical Layer</h3>
+      <table>
+        <tr>
+          <th>Speed</th>
+          <th>Name</th>
+          <th> Informal IEEE Standard Name</th>
+          <th> Formal IEEE Standard Name</th>
+        </tr>
+        <tr>
+          <td>10 Mbps</td>
+          <td>Ethernet</td>
+          <td>10BASE-T</td> 
+          <td>802.3</td>
+        </tr>
+        <tr>
+          <td>100 Mbps</td>
+          <td>FastEthernet</td>
+          <td>100BASE-T</td>
+          <td>802.3 u</td>
+        </tr>
+        <tr>
+          <td>1 Gbps</td>
+          <td>GigabitEthernet</td>
+          <td>1000BASE-T</td>
+          <td>802.3 ab</td>
+        </tr>
+        <tr>
+          <td>10 Gbps</td>
+          <td>10 GE</td>      
+          <td>10GBASE-T</td>
+          <td>802.3 an</td>
+        </tr>
+        <tr>
+          <td>40 Gbps</td>
+          <td>40 GE</td>
+          <td>40GBASE-T</td>
+          <td>802.3 bg</td>
+        </tr>
+      </table>
+    </section>
     
-    <h1>Theoretical Part </h1>
     <section>
-        <h2>1.1 Ethernet Standards for Physical Layer</h2>
-        <table>
-            <tr>
-                <th>Speed</th>
-                <th>Name</th>
-                <th> Informal IEEE Standard Name</th>
-                <th> Formal IEEE Standard Name</th>
-            </tr>
-            <tr>
-                <td>10 Mbps</td>
-                <td>Ethernet</td>
-                <td>10BASE-T</td> 
-                <td>802.3</td>
-            </tr>
-            <tr>
-                <td>100 Mbps</td>
-                <td>FastEthernet</td>
-                <td>100BASE-T</td>
-                <td>802.3 u</td>
-            </tr>
-            <tr>
-                <td>1 Gbps</td>
-                <td>GigabitEthernet</td>
-                <td>1000BASE-T</td>
-                <td>802.3 ab</td>
-            </tr>
-            <tr>
-                <td>10 Gbps</td>
-                <td>10 GE</td>      
-                <td>10GBASE-T</td>
-                <td>802.3 an</td>
-            </tr>
-            <tr>
-                <td>40 Gbps</td>
-                <td>40 GE</td>
-                <td>40GBASE-T</td>
-                <td>802.3 bg</td>
-            </tr>
-        </table>
-    </section>
-
-    <section>
-        <h3>Ethernet Limits</h3>
-        <p>
-            The shared cable's length is one of the main limitations. The router still requires a physical wire connection, even if we connect via wifi. Ethernet cable consists of four twisted pairs of cables, usually protected by an outer jacket. Even so, there is still a chance that an Ethernet cable will break, stopping the connection.
-        </p>
-        <p>
-            The longer the cable is, the slower the connection is going to be. Thus, its maximal length is approximately 300m.
-        </p>
-
-        <h3>Ethernet Frame</h3>
-        <p>
-            Data link layer protocol data unit, uses Ethernet physical layer transport mechanisms. When transmitting data over Ethernet, the Ethernet frame is primarily responsible for the correct rulemaking and successful transmission of data packets. Essentially, data sent over Ethernet is carried by the frame.
-        </p>
-    </section>
-
-    <section>
-        <h2>1.2 MAC Address, Broadcasting</h2>
-        <p>
-            <strong>MAC Address:</strong> (Media Access Control Address) is a 12-digit hexadecimal number assigned to each device connected to the network. The MAC address, primarily specified as a unique identifier during device manufacturing, is frequently located on the network interface card (NIC) of a device. 
-        </p>
-        <p>
-            A MAC address is required when trying to locate a device or when performing diagnostics on a network device. 
-        </p>
-        <p>
-            The MAC address belongs to the data link layer of the OSI model, which encapsulates the MAC address of the source and destination in the header of each data frame to ensure node-to-node communication.
-        </p>
-        <p>
-            <strong>Broadcasting:</strong> Method of transferring a message to all recipients at the same time. In this all-to-all communication model, every device is sending data to every other device in the network domain.
-        </p>
-    </section>
-
-    <section>
-        <h2>1.3 The Difference Between Hub, Switch, and Router</h2>
-
-        <h3>Hub</h3>
-        <p>
-            <ul>               
-                <li>The easiest way to connect two devices in LAN (local area network) using MAC addresses for data transmission.</li>
-                <li>Whenever any message is sent to the hub, it is resent to all nodes connected to the network.</li>
-                <li>Transferred data: bits / electrical signals</li>
-                <li>Hub does not allow the connection to the internet.</li>
-            </ul>
-        </p>
-
-        <h3>Switches</h3>
-        <p>
-            <ul>
-                <li>OSI model: data link layer</li>
-                <li>Type of hubs; uses packet switching to send and receive data over the network</li>
-                <li>They differentiate to which node data packet is sent.</li>
-                <li>Connects multiple hosts, can forward a message to a specific host using MAC address</li>
-                <li>Transferred data: frames</li>
-                <li>Switches are less intensive for the network, but just as hubs don't connect the devices to the internet.</li>
-            </ul>
-        </p>
-
-        <h3>Routers</h3>
-        <p>
-            <ul>
-                <li>OSI model: network layer</li>
-                <li>Connects two or more packet-switched networks or subnetworks. It manages traffic between these networks by forwarding data packets to their intended IP addresses and allows multiple devices to use the same Internet connection.</li>
-                <li>Uses IP address instead of MAC address, analyzes the data up to layer 3, and transfers the data to another router until it arrives at the destination.</li>
-                <li>Almost like switches, the only difference is that they can create a connection to the internet or other WAN (wide area network).</li>
-            </ul>
-        </p>
-    </section>
-
-    <section>
-        <h2>1.4 CSMA/CD, Collision, Half and Full Duplex</h2>
-        <h3>CSMA/CD - Network Sense Multiple Access with Collision Detection</h3>
-        <p>
-            <strong>CSMA/CD:</strong> Creates a procedure that controls how communication occurs in a network over a shared medium.
-        </p>
-        <ol>
-            <li><strong>Carrier Sense:</strong> Makes sure if the medium is now free. When it is, the protocol starts data transmission.</li>
-            <li><strong>Multiple Access:</strong> Involves several computers sharing a transmission medium and being connected to the network.</li>
-            <li><strong>Collision Detection:</strong> If a collision (multiple devices trying to send data over the medium at the same time) is detected, the participant waits a random interval of time to 'release' the medium and tries to resend the data once more. After 16 tries, the protocol permanently ends the transmission.</li>
-            <li><strong>Duplex:</strong> Describes the ability to send and receive data.</li>
-            <ul>
-                <li><strong>Half-duplex:</strong> Unidirectional communication at a given time - data can move in two directions but not at the same time. For example, in CB radio, information is sent and received alternately, resulting in a loss of transfer.</li>
-                <li><strong>Full-duplex:</strong> Bidirectional communication at a given time - information is sent in both directions without loss of transfer. For example, in cellular networks or Ethernet.</li>
-            </ul>
-        </ol>
-    </section>
-
-    <section>
-        <h2>1.5 ARP Request, Detecting Doubled IP Address</h2>
-        <!-- Include content for ARP Request and Detecting Doubled IP Address -->
-    </section>
-
-    <section>
-        <h2>1.6 BOOTP, DHCP</h2>
-        <!-- Include content for BOOTP and DHCP -->
-    </section>
-
-    <section>
-        <h2>1.7 VLANs</h2>
-        <!-- Include content for VLANs -->
-    </section>
-
-    <br><hr><br>
-    <h1>Practical Part </h1>
-
-    <section>
-        <h2>2.1 Find your MAC Address and Default Gateway MAC Address</h2>
-        <p>"Physical Address" under the used network adapter describes the MAC address.</p>
-        
-        <figure>
-            <img src="./screenshots_lab2/fig1.png" alt="ipconfig command results" />
-            <figcaption>Fig. 1. Results of the command 'ipconfig /all'</figcaption>
-        </figure>
-
-        <figure>
-            <img src="./screenshots_lab2/fig1.png" alt="pinging gateway results" />
-            <figcaption>Fig. 2. Results of the command 'ping' for the appropriate gateway</figcaption>
-        </figure>
-
-        <p>
-            In the background, we were running Wireshark so that we could get the physical address in the Ethernet II protocol. 
-        </p>
-        <figure>
-            <img src="./screenshots_lab2/fig3.png" alt="MAC address from Wireshark listings" />
-            <figcaption>Fig. 3. MAC address from Wireshark listings'</figcaption>
-        </figure>
-
-        <h2>2.2 Find the producer of your network adapter</h2>
-        <p>By visiting a MAC address lookup website and entering the MAC address, we could easily find the manufacturer of the network adapter.</p>
-        <a href="https://www.wireshark.org/tools/oui-lookup.html">https://www.wireshark.org/tools/oui-lookup.html</a>
-        <p> Using this page we could get the producer of the network adapter. </p>
+      <h4>Ethernet Limits</h4>
+      <p>
+        The shared cable's length is one of the main limitations. The router still requires a physical wire connection, even if we connect via wifi. Ethernet cable consists of four twisted pairs of cables, usually protected by an outer jacket. Even so, there is still a chance that an Ethernet cable will break, stopping the connection.
+      </p>
+      <p>
+        The longer the cable is, the slower the connection is going to be. Thus, its maximal length is approximately 300m.
+      </p>
       
-        <figure>
-            <img src="./screenshots_lab2/fig4.png" alt="OUI search result" />
-            <figcaption>Fig. 4. OUI search giving the information about the network adapter producer</figcaption>
-        </figure>
-      
-        <h2>2.3 Flush ARP Cache</h2>
-        <p>
-            In order to delete ARP cache, we had to switch to <em>Administrator: Command Propmt</em>. Firstly we are displaying ARP cache before the procedure 
-            using command <em>arp -a</em> command. Than we moved on to flush the ARP cache using command <em>arp -d</em>. To proove that the opertion was successful,
-            we displayed the cache.
-        </p>
-        <figure>
-            <img src="./screenshots_lab2/fig5.png" alt="Arp -a (command dipslaying cache)" />
-            <figcaption>Fig. 5. Results of <em> arp -a</em> command (displaying cache).</figcaption>
-        </figure>
-        <figure>
-            <img src="./screenshots_lab2/fig6.png" alt="Arp -d (command clearing cache)" />
-            <figcaption>Fig. 6. Results of <em> arp -d</em> command (clearing cache).</figcaption>
-        </figure>
-        
-        <h2>2.4 Set the same IP address on two different hosts in the lab and detect it using arp request</h2>
-        <p>
-            In setting the same IP addresses on two different hosts, firstly, we displayed the IP configuration on the second device.
-        </p>    
-        <figure> <!--Add photo to the folder-->
-            <img src="./screenshots_lab2/fig7.png" alt="IP address of the second computer" />
-            <figcaption>Fig. 7. Results of <em> config /all</em> command to display IP address of the second computer.</figcaption>
-        </figure>
-            In <em>Settings</em>, from <em>Advanced network settings > View additional properties</em> we changed the IP configuration.
-        <figure> 
-            <img src="./screenshots_lab2/fig8.png" alt="Settings before IP address changes" />
-          <figcaption>Fig. 8. Appropriate section in <em> Settings </em> before the IP address changes.</figcaption>
-        </figure>
-        <figure>
-            <img src="./screenshots_lab2/fig9.png" alt="IP settings eddition" />
-          <figcaption>Fig. 9. IP settings eddition.</figcaption>
-        </figure>
-        <figure> 
-            <img src="./screenshots_lab2/fig10.png" alt="Settings after changes in IP address" />
-          <figcaption>Fig. 10. Appropriate section in <em> Settings </em> before the IP address changes.</figcaption>
-        </figure>
-        <p>
-            As a result, the Internet connection was disabled (but not on the device we taken IP address from).
-        </p>
-        <figure>
-            <img src="./screenshots_lab2/fig11.png" alt="Disabled internet connection after the changes in IP address." />
-          <figcaption>Fig. 10. Disabled internet connection after the changes in IP address..</figcaption>
-        </figure>
-
-
-        <h2>2.5 Using Wireshark save the packets required to obtain IP address through DHCP</h2>
-        <!--soon-->
-
-        <h2>2.6 Release and renew IP address using ipconfig</h2>
-        <!--soon-->
-
-        <h2>2.7  Change MAC address of a computer in the lab to the same as the MAC address of the other computer in the lab and verify IP address obtained.</h2>
-        <!--soon-->
-
+      <h4>Ethernet Frame</h4>
+      <p>
+        Data link layer protocol data unit, uses Ethernet physical layer transport mechanisms. When transmitting data over Ethernet, the Ethernet frame is primarily responsible for the correct rulemaking and successful transmission of data packets. Essentially, data sent over Ethernet is carried by the frame.
+      </p>
     </section>
-
-    <br><hr>
+    
+    <section>
+      <h3>1.2 MAC Address, Broadcasting</h3>
+      <p>
+        <strong>MAC Address:</strong> (Media Access Control Address) is a 12-digit hexadecimal number assigned to each device connected to the network. The MAC address, primarily specified as a unique identifier during device manufacturing, is frequently located on the network interface card (NIC) of a device. 
+      </p>
+      <p>
+        A MAC address is required when trying to locate a device or when performing diagnostics on a network device. 
+      </p>
+      <p>
+        The MAC address belongs to the data link layer of the OSI model, which encapsulates the MAC address of the source and destination in the header of each data frame to ensure node-to-node communication.
+      </p>
+      <p>
+        <strong>Broadcasting:</strong> Method of transferring a message to all recipients at the same time. In this all-to-all communication model, every device is sending data to every other device in the network domain.
+      </p>
+    </section>
+    
+    <section>
+      <h3>1.3 The Difference Between Hub, Switch, and Router</h3>
+      
+      <h4>Hub</h4>
+      <p>
+        <ul>               
+          <li>The easiest way to connect two devices in LAN (local area network) using MAC addresses for data transmission.</li>
+          <li>Whenever any message is sent to the hub, it is resent to all nodes connected to the network.</li>
+          <li>Transferred data: bits / electrical signals</li>
+          <li>Hub does not allow the connection to the internet.</li>
+        </ul>
+      </p>
+      
+      <h4>Switches</h4>
+      <p>
+        <ul>
+          <li>OSI model: data link layer</li>
+          <li>Type of hubs; uses packet switching to send and receive data over the network</li>
+          <li>They differentiate to which node data packet is sent.</li>
+          <li>Connects multiple hosts, can forward a message to a specific host using MAC address</li>
+          <li>Transferred data: frames</li>
+          <li>Switches are less intensive for the network, but just as hubs don't connect the devices to the internet.</li>
+        </ul>
+      </p>
+      
+      <h4>Routers</h4>
+      <p>
+        <ul>
+          <li>OSI model: network layer</li>
+          <li>Connects two or more packet-switched networks or subnetworks. It manages traffic between these networks by forwarding data packets to their intended IP addresses and allows multiple devices to use the same Internet connection.</li>
+          <li>Uses IP address instead of MAC address, analyzes the data up to layer 3, and transfers the data to another router until it arrives at the destination.</li>
+          <li>Almost like switches, the only difference is that they can create a connection to the internet or other WAN (wide area network).</li>
+        </ul>
+      </p>
+    </section>
+    
+    <section>
+      <h3>1.4 CSMA/CD, Collision, Half and Full Duplex</h3>
+      <h4>CSMA/CD - Network Sense Multiple Access with Collision Detection</h4>
+      <p>
+        <strong>CSMA/CD:</strong> Creates a procedure that controls how communication occurs in a network over a shared medium.
+      </p>
+      <ol>
+        <li><strong>Carrier Sense:</strong> Makes sure if the medium is now free. When it is, the protocol starts data transmission.</li>
+        <li><strong>Multiple Access:</strong> Involves several computers sharing a transmission medium and being connected to the network.</li>
+        <li><strong>Collision Detection:</strong> If a collision (multiple devices trying to send data over the medium at the same time) is detected, the participant waits a random interval of time to 'release' the medium and tries to resend the data once more. After 16 tries, the protocol permanently ends the transmission.</li>
+        <li><strong>Duplex:</strong> Describes the ability to send and receive data.</li>
+        <ul>
+          <li><strong>Half-duplex:</strong> Unidirectional communication at a given time - data can move in two directions but not at the same time. For example, in CB radio, information is sent and received alternately, resulting in a loss of transfer.</li>
+          <li><strong>Full-duplex:</strong> Bidirectional communication at a given time - information is sent in both directions without loss of transfer. For example, in cellular networks or Ethernet.</li>
+        </ul>
+      </ol>
+    </section>
+    
+    <section>
+      <h3>1.5 ARP Request, Detecting Doubled IP Address</h3>
+      <!-- Include content for ARP Request and Detecting Doubled IP Address -->
+    </section>
+    
+    <section>
+      <h3>1.6 BOOTP, DHCP</h3>
+      <!-- Include content for BOOTP and DHCP -->
+    </section>
+    
+    <section>
+      <h3>1.7 VLANs</h3>
+      <!-- Include content for VLANs -->
+    </section>
+    
+    <hr>
+    <h2>Practical Part </h2>
+    
+    <section>
+      <h3>2.1 Find your MAC Address and Default Gateway MAC Address</h3>
+      <p>"Physical Address" under the used network adapter describes the MAC address.</p>
+      
+      <figure>
+        <img src="./screenshots/fig1.png" alt="ipconfig command results" />
+        <figcaption>Fig. 1. Results of the command 'ipconfig /all'</figcaption>
+      </figure>
+      
+      <figure>
+        <img src="./screenshots/fig1.png" alt="pinging gateway results" />
+        <figcaption>Fig. 2. Results of the command 'ping' for the appropriate gateway</figcaption>
+      </figure>
+      
+      <p>
+        In the background, we were running Wireshark so that we could get the physical address in the Ethernet II protocol. 
+      </p>
+      <figure>
+        <img src="./screenshots/fig3.png" alt="MAC address from Wireshark listings" />
+        <figcaption>Fig. 3. MAC address from Wireshark listings'</figcaption>
+      </figure>
+      
+      <h3>2.2 Find the producer of your network adapter</h3>
+      <p>By visiting a MAC address lookup website and entering the MAC address, we could easily find the manufacturer of the network adapter.</p>
+      <a href="https://www.wireshark.org/tools/oui-lookup.html">https://www.wireshark.org/tools/oui-lookup.html</a>
+      <p> Using this page we could get the producer of the network adapter. </p>
+      
+      <figure>
+        <img src="./screenshots/fig4.png" alt="OUI search result" />
+        <figcaption>Fig. 4. OUI search giving the information about the network adapter producer</figcaption>
+      </figure>
+      
+      <h3>2.3 Flush ARP Cache</h3>
+      <p>
+        In order to delete ARP cache, we had to switch to <em>Administrator: Command Propmt</em>. Firstly we are displaying ARP cache before the procedure 
+        using command <em>arp -a</em> command. Than we moved on to flush the ARP cache using command <em>arp -d</em>. To proove that the opertion was successful,
+        we displayed the cache.
+      </p>
+      <figure>
+        <img src="./screenshots/fig5.png" alt="Arp -a (command dipslaying cache)" />
+        <figcaption>Fig. 5. Results of <em> arp -a</em> command (displaying cache).</figcaption>
+      </figure>
+      <figure>
+        <img src="./screenshots/fig6.png" alt="Arp -d (command clearing cache)" />
+        <figcaption>Fig. 6. Results of <em> arp -d</em> command (clearing cache).</figcaption>
+      </figure>
+      
+      <h3>2.4 Set the same IP address on two different hosts in the lab and detect it using arp request</h3>
+      <p>
+        In setting the same IP addresses on two different hosts, firstly, we displayed the IP configuration on the second device.
+      </p>    
+      <figure> <!--Add photo to the folder-->
+        <img src="./screenshots/fig7.png" alt="IP address of the second computer" />
+        <figcaption>Fig. 7. Results of <em> config /all</em> command to display IP address of the second computer.</figcaption>
+      </figure>
+      In <em>Settings</em>, from <em>Advanced network settings > View additional properties</em> we changed the IP configuration.
+      <figure> 
+        <img src="./screenshots/fig8.png" alt="Settings before IP address changes" />
+        <figcaption>Fig. 8. Appropriate section in <em> Settings </em> before the IP address changes.</figcaption>
+      </figure>
+      <figure>
+        <img src="./screenshots/fig9.png" alt="IP settings eddition" />
+        <figcaption>Fig. 9. IP settings eddition.</figcaption>
+      </figure>
+      <figure> 
+        <img src="./screenshots/fig10.png" alt="Settings after changes in IP address" />
+        <figcaption>Fig. 10. Appropriate section in <em> Settings </em> before the IP address changes.</figcaption>
+      </figure>
+      <p>
+        As a result, the Internet connection was disabled (but not on the device we taken IP address from).
+      </p>
+      <figure>
+        <img src="./screenshots/fig11.png" alt="Disabled internet connection after the changes in IP address." />
+        <figcaption>Fig. 10. Disabled internet connection after the changes in IP address..</figcaption>
+      </figure>
+      
+      
+      <h3>2.5 Using Wireshark save the packets required to obtain IP address through DHCP</h3>
+      <!--soon-->
+      
+      <h3>2.6 Release and renew IP address using ipconfig</h3>
+      <!--soon-->
+      
+      <h3>2.7  Change MAC address of a computer in the lab to the same as the MAC address of the other computer in the lab and verify IP address obtained.</h3>
+      <!--soon-->
+      
+    </section>
+    
+    <hr>
     <footer>
-        <h4>Bibliography: </h4>
-        <p></p>
-            <ol>
-                <li>
-                    <a href="https://www.ionos.com/">https://www.ionos.com/</a>,
-                </li>
-                <li>
-                    <a href="https://www.techtarget.com/">https://www.techtarget.com/</a>
-                </li>
-            </ol>
-        </p>
-    </footer>
+      <h4>Bibliography: </h4>
+      <p></p>
+      <ol>
+        <li>
+          <a href="https://www.ionos.com/">https://www.ionos.com/</a>,
+        </li>
+        <li>
+          <a href="https://www.techtarget.com/">https://www.techtarget.com/</a>
+        </li>
+      </ol>
+    </p>
+  </footer>
+</div>
+
 </body>
 </html>
