@@ -1,7 +1,7 @@
 body {
   font-family: Arial, sans-serif;
     background-color: #151d27;
-    color: white;
+    color: #ededed;
     margin: 1rem;
 }
 
@@ -17,10 +17,6 @@ hr {
 
 h2 {
   margin-top: 2rem;
-}
-
-p {
-  color: #c5c5c5;
 }
 
 img {
