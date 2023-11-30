@@ -137,19 +137,34 @@
     </section>
     
     <section>
-      <h3>1.5 ARP Request, Detecting Doubled IP Address</h3>
-      <!-- Include content for ARP Request and Detecting Doubled IP Address -->
-    </section>
-    
-    <section>
+      <h3>1.5 ARP Request and Detecting Doubled IP Address</h3>
+      <p>
+        <strong>ARP</strong> (Address Resolution Protocol, operating under DLL) is used to map MAC address to the IP address. It is being achieved by translating 32 bit IP (IPv4) to 48 bit MAC address.
+        ARP request is send when MAC address of other device is not known. ARP broadcasts a request packet to all the machines on the LAN and asks if any of the machines are using that particular IP address. When a machine recognizes the IP address as its own, it sends a reply so ARP can update the cache for future reference and proceed with the communication.
+        <br><br>
+        <strong>Duplicate Address Detection </strong>(DAD) is a mechanism protecting from many IP's (IPv6) being assigned to the same VLAN interface on the switch.
+        It verifies that an IPv6 home address is unique on the LAN before the address is assigned to a physical interface. When your system finds an IP conflict, the network interface on one or both ends becomes disabled. This shuts down each device with an affected IP address, disabling functions until the IP address conflict is resolved.
+      </p>
+  </section>
+
+  <section>
       <h3>1.6 BOOTP, DHCP</h3>
-      <!-- Include content for BOOTP and DHCP -->
-    </section>
-    
-    <section>
+      <p>
+        <strong>BOOTP</strong>
+         (Bootstrap Protocol) is an internet protocol that lets a network user automatically be configured to receive an IP address and have an operating system booted without user involvement. BOOTP is executed using User Datagram Protocol (UDP) and is the basis for Dynamic Host Configuration Protocol (DHCP).
+        <br><br>
+        <strong>DHCP</strong>
+         (Dynamic Host Configuration Protocol) is a network protocol used on IP networks where a DHCP server automatically assigns an IP address and other information to each host on the network so they can communicate efficiently with other endpoints.
+        <br><br>
+        DHCP automatically obtains and assigns IP addresses whereas BOOTP only supports manual configuration. Due to this fact, BOOTP is more prone to errors.</p>
+  </section>
+
+  <section>
       <h3>1.7 VLANs</h3>
-      <!-- Include content for VLANs -->
-    </section>
+      <p>
+          <strong>Virtual Local Area Networks </strong>(VLANs) are used to logically segment a network into multiple broadcast domains. VLANs help in enhancing network security, efficiency, and manageability by isolating traffic between different VLANs. Devices within the same VLAN can communicate with each other as if they are on the same physical network, regardless of their actual physical location.
+      </p>
+  </section>
     
     <hr>
     <h2>Practical Part </h2>
