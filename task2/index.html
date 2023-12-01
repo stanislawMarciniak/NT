@@ -247,37 +247,34 @@
       
       
       <h3>2.5 Using Wireshark save the packets required to obtain IP address through DHCP</h3>
-      <p>We changed the manual configuration of the IP address to automatic and observed exchange of the packets in Wireshark. We could see that the automatic configuration used the DHCP protocol to assign the IP address. It involves sending Discover, Offer and Request and ACK packets in order to complete the whole process of assigning.</p>
+      <p>We reconnected to the eduroam and observed exchange of the packets in Wireshark. We could see that the automatic configuration used the DHCP protocol to assign the IP address. It involves sending Discover, Offer and Request and ACK packets in order to complete the whole process of assigning.</p>
+ 
       <figure>
-        <img src="./screenshots/fig12.png" alt="Manual configuration without access to the Internet." />
-        <figcaption>Fig. 12. Manual configuration without access to the Internet</figcaption>
-      </figure>
-      <figure>
-        <img src="./screenshots/fig13.png" alt="Wireshark listings of DHCP packets." />
-        <figcaption>Fig. 13. Wireshark listings of DHCP packets</figcaption>
+        <img src="./screenshots/fig12.png" alt="Wireshark listings of DHCP packets." />
+        <figcaption>Fig. 12. Wireshark listings of DHCP packets</figcaption>
       </figure>
       <h3>2.6 Release and renew IP address using ipconfig</h3>
       <p>We used the ipconfig /release command to release current IP address</p>
       <figure>
-        <img src="./screenshots/fig14.png" alt="Results of ipconfig /release command." />
-        <figcaption>Fig. 14. Results of ipconfig /release command</figcaption>
+        <img src="./screenshots/fig13.png" alt="Results of ipconfig /release command." />
+        <figcaption>Fig. 13. Results of ipconfig /release command</figcaption>
       </figure>
       
-      <p>We used the ipconfig /renew command to renew (give a new) IP address (Fig. 12).</p>
+      <p>We used the ipconfig /renew command to renew (give a new) IP address.</p>
       <figure>
-        <img src="./screenshots/fig15.png" alt="Results of ipconfig /renew command." />
-        <figcaption>Fig. 15 Results of ipconfig /renew command</figcaption>
+        <img src="./screenshots/fig14.png" alt="Results of ipconfig /renew command." />
+        <figcaption>Fig. 14 Results of ipconfig /renew command</figcaption>
       </figure>
       
       <h3>2.7  Change MAC address of a computer in the lab to the same as the MAC address of the other computer in the lab and verify IP address obtained.</h3>
       <figure>
-        <img src="./screenshots/fig16.png" alt="Changing of the MAC address." />
-        <figcaption>Fig. 16. Changing MAC address</figcaption>
+        <img src="./screenshots/fig15.png" alt="Changing of the MAC address." />
+        <figcaption>Fig. 15. Changing MAC address</figcaption>
       </figure>
-      <p>The IP address of the computer is the same as on the previous computer (Fig. 14) as the DHCP service recognizes a client by the physical address of the network card. To be more precise, it is the DHCP packet (Request) that will specifically request the previously assigned IP address (but there might be a case where the same, previous IP address will not be assigned again).</p>
+      <p>The IP address of the computer is the same as on the previous computer as the DHCP service recognizes a client by the physical address of the network card. To be more precise, it is the DHCP packet (Request) that will specifically request the previously assigned IP address (but there might be a case where the same, previous IP address will not be assigned again).</p>
       <figure>
-        <img src="./screenshots/fig17.png" alt="Results of ipconfig /all command showing the MAC and IP addresses." />
-        <figcaption>Fig. 17. Results of ipconfig /all command showing the MAC and IP addresses</figcaption>
+        <img src="./screenshots/fig16.png" alt="Results of ipconfig /all command showing the MAC and IP addresses." />
+        <figcaption>Fig. 16. Results of ipconfig /all command showing the MAC and IP addresses</figcaption>
       </figure>
     </section>
     
