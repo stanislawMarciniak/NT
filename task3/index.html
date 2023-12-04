@@ -8,5 +8,112 @@
   </head>
   <body>
     <div class="container">Task 3</div>
+    
+    <br><hr><br>
+    <h1>Practical Part </h1>
+
+    <section>
+        <h2>2.1.6 Identify physical location of abovementioned servers (search for tools in the Internet)</h2>
+        <h4>In order to find the physical location of the servers, we used the website: <a href="https://www.iplocation.net/ip-lookup" target="_blank">https://www.iplocation.net/ip-lookup</a></h4>
+        <h3>Computer in a local network</h3>
+        <figure>
+          <img src="./screenshots_lab3/fig1.1.png" alt="physical location of server - computer in local network" />
+          <figcaption>Fig. 1. Computer in a local network - information about the physical location of the server. </figcaption>
+        </figure>
+        <h3>www.onet.pl</h3>
+        <figure>
+          <img src="./screenshots_lab3/fig1.2.png" alt="physical location of server - www.onet.pl" />
+          <figcaption>Fig. 1. www.onet.pl - information about the physical location of the server. </figcaption>
+        </figure>
+        <h3>www.google.com</h3>
+        <figure>
+          <img src="./screenshots_lab3/fig1.3.png" alt="physical location of server - www.google.com" />
+          <figcaption>Fig. 1. www.google.com - information about the physical location of the server. </figcaption>
+        </figure>
+        <h3>www.google.pl</h3>
+        <figure>
+          <img src="./screenshots_lab3/fig1.4.png" alt="physical location of server - cwww.google.pl" />
+          <figcaption>Fig. 1. www.google.pl - information about the physical location of the server. </figcaption>
+        </figure>
+        <h3> www.lodman.pl</h3>
+        <figure>
+          <img src="./screenshots_lab3/fig1.5.png" alt="physical location of server - www.lodman.pl" />
+          <figcaption>Fig. 1. www.lodman.pl - information about the physical location of the server. </figcaption>
+        </figure>
+    </section>
+
+    <section>
+        <h2>2.1.7 When using tracert assign consecutive hops to private/public network addresses.</h2>
+       
+        <p><strong>Private IP Addresses</strong><br>
+          They are not routed on the internet and are meant for local network use.<br>
+          Common private IP ranges include:<br>
+          10.0.0.0 to 10.255.255.255<br>
+          172.16.0.0 to 172.31.255.255<br>
+          192.168.0.0 to 192.168.255.255</p>
+  
+          <p><strong>Public IP Addresses:</strong><br>
+            Any IP address not falling within the above private ranges.<br>
+            Routable on the global internet.<br>
+            Used for external network and internet access.</p>
+          <br>
+
+          <h3> Computer in a local network</h3>
+            <p>192.168.153.1 - private</p>
+
+          <h3>www.onet.pl</h3>
+            <p>10.128.0.1 - Private<br>
+            192.168.222.1 - Private<br>
+            212.51.207.81 - Public<br>
+            212.51.208.217 - Public<br>
+            212.191.92.141 - Public<br>
+            212.191.224.5 - Public<br>
+            212.162.10.81 - Public<br>
+            4.69.159.58 – Public</p>
+          
+          <h3>www.google.com</h3>
+            <p>10.128.0.1 - Private<br>
+            192.168.222.1 - Private<br>
+            212.51.207.81 - Public<br>
+            212.51.208.217 - Public<br>
+            212.191.92.141 - Public<br>
+            212.191.224.5 - Public<br>
+            72.14.203.178 - Public<br>
+            142.250.37.193 - Public<br>
+            209.85.253.225 - Public<br>
+            142.250.203.142 – Public</p>
+      
+          <h3>www.google.pl</h3>
+            <p>10.128.0.1 - Private<br>
+            192.168.222.1 - Private<br>
+            212.51.207.81 - Public<br>
+            212.51.208.217 - Public<br>
+            212.191.92.141 - Public<br>
+            212.191.224.5 - Public<br>
+            72.14.203.178 - Public<br>
+            142.250.37.209 - Public<br>
+            209.85.252.117 - Public<br>
+            142.250.186.195 – Public</p>
+          
+          <h3>www.lodman.pl</h3>
+            <p>10.128.0.1 - Private<br>
+            192.168.222.1 - Private<br>
+            212.51.207.81 - Public<br>
+            212.51.208.217 - Public<br>
+            212.191.92.141 - Public<br>
+            212.51.192.44 - Public<br>
+            212.191.2.25 – Public</p>
+      </section>
+    
+      <section>
+          <h2>2.1.8.Check ip address and physical address of your host using ipconfig</h2>
+          <h4>In order to check the IP address and physical address we used <i>ipconfig /all</i> command.</h4>
+            <p>Ip address: 192.168.153.1<br>
+            Physical address (MAC address): 08-6A-C5-F8-17-95</p>
+          <figure>
+            <img src="./screenshots_lab3/fig1.6.png" alt="ipconfig command results" />
+            <figcaption>Fig. 1. Results of the command 'ipconfig /all' used to find IP address and physical address.</figcaption>
+          </figure>
+      </section>
   </body>
 </html>
