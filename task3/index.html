@@ -7,113 +7,389 @@
     <title>Task 3</title>
   </head>
   <body>
-    <div class="container">Task 3</div>
-    
-    <br><hr><br>
-    <h1>Practical Part </h1>
+    <div class="container">
+      <h2>Theoretical Part</h2>
+      <h3>1.1 IP address</h3>
+      <p>
+        It is a unique address that identifies a device on the internet or a
+        local network. IP stands for "Internet Protocol," which is the set of
+        rules governing the format of data sent via the internet or local
+        network. First part of IP address is a network number and second part is
+        a host number. 32bit number in IPv4 standard or 128bit number in IPv6.
+        In essence, it is the identifier that allows information to be sent
+        between devices on a network: they contain location information and make
+        devices accessible for communication.
+      </p>
+      <p>
+        IP is a connectionless, unreliable, best-effort delivery protocol. IP
+        accepts whatever data is passed down to it from the upper layers and
+        forwards the data in the form of IP Packets. All the nodes are
+        identified using an IP address. Packets are delivered from the source to
+        the destination using IP address
+      </p>
 
-    <section>
-        <h2>2.1.6 Identify physical location of abovementioned servers (search for tools in the Internet)</h2>
-        <h4>In order to find the physical location of the servers, we used the website: <a href="https://www.iplocation.net/ip-lookup" target="_blank">https://www.iplocation.net/ip-lookup</a></h4>
-        <h3>Computer in a local network</h3>
-        <figure>
-          <img src="./screenshots_lab3/fig1.1.png" alt="physical location of server - computer in local network" />
-          <figcaption>Fig. 1. Computer in a local network - information about the physical location of the server. </figcaption>
-        </figure>
-        <h3>www.onet.pl</h3>
-        <figure>
-          <img src="./screenshots_lab3/fig1.2.png" alt="physical location of server - www.onet.pl" />
-          <figcaption>Fig. 1. www.onet.pl - information about the physical location of the server. </figcaption>
-        </figure>
-        <h3>www.google.com</h3>
-        <figure>
-          <img src="./screenshots_lab3/fig1.3.png" alt="physical location of server - www.google.com" />
-          <figcaption>Fig. 1. www.google.com - information about the physical location of the server. </figcaption>
-        </figure>
-        <h3>www.google.pl</h3>
-        <figure>
-          <img src="./screenshots_lab3/fig1.4.png" alt="physical location of server - cwww.google.pl" />
-          <figcaption>Fig. 1. www.google.pl - information about the physical location of the server. </figcaption>
-        </figure>
-        <h3> www.lodman.pl</h3>
-        <figure>
-          <img src="./screenshots_lab3/fig1.5.png" alt="physical location of server - www.lodman.pl" />
-          <figcaption>Fig. 1. www.lodman.pl - information about the physical location of the server. </figcaption>
-        </figure>
-    </section>
+      <h3>1.2 Network subnets</h3>
+      <p>
+        It is a logical subdivision of an IP network. To create subnet, Host ID
+        is divided into Host ID and subnet ID.
+      </p>
+      <p>
+        Computers that belong to the same subnet are addressed with an identical
+        most-significant bit-group in their IP addresses. This results in the
+        logical division of an IP address into two fields: the network number or
+        routing prefix and the rest field or host identifier.
+      </p>
+      <p>
+        Through subnetting, network traffic can travel a shorter distance
+        without passing through unnecessary routers to reach its destination.
+      </p>
 
-    <section>
-        <h2>2.1.7 When using tracert assign consecutive hops to private/public network addresses.</h2>
-       
-        <p><strong>Private IP Addresses</strong><br>
-          They are not routed on the internet and are meant for local network use.<br>
-          Common private IP ranges include:<br>
-          10.0.0.0 to 10.255.255.255<br>
-          172.16.0.0 to 172.31.255.255<br>
-          192.168.0.0 to 192.168.255.255</p>
-  
-          <p><strong>Public IP Addresses:</strong><br>
-            Any IP address not falling within the above private ranges.<br>
-            Routable on the global internet.<br>
-            Used for external network and internet access.</p>
-          <br>
+      <h3>1.3 Network classes</h3>
 
-          <h3> Computer in a local network</h3>
-            <p>192.168.153.1 - private</p>
+      <p><strong>Class A</strong></p>
+      <p>
+        This Class IP address always has its first bit as 0, next 7 bits as a
+        network address and following 24 bits as the host address. This means
+        that it allows 2^7 networks and 2^24 hosts per network. The range of IP
+        addresses is 0.0.0.0 to 127.255.255.255. This class of IP address is
+        used for a very large network. Ex. Big Organisations.
+      </p>
 
-          <h3>www.onet.pl</h3>
-            <p>10.128.0.1 - Private<br>
-            192.168.222.1 - Private<br>
-            212.51.207.81 - Public<br>
-            212.51.208.217 - Public<br>
-            212.191.92.141 - Public<br>
-            212.191.224.5 - Public<br>
-            212.162.10.81 - Public<br>
-            4.69.159.58 – Public</p>
-          
-          <h3>www.google.com</h3>
-            <p>10.128.0.1 - Private<br>
-            192.168.222.1 - Private<br>
-            212.51.207.81 - Public<br>
-            212.51.208.217 - Public<br>
-            212.191.92.141 - Public<br>
-            212.191.224.5 - Public<br>
-            72.14.203.178 - Public<br>
-            142.250.37.193 - Public<br>
-            209.85.253.225 - Public<br>
-            142.250.203.142 – Public</p>
-      
-          <h3>www.google.pl</h3>
-            <p>10.128.0.1 - Private<br>
-            192.168.222.1 - Private<br>
-            212.51.207.81 - Public<br>
-            212.51.208.217 - Public<br>
-            212.191.92.141 - Public<br>
-            212.191.224.5 - Public<br>
-            72.14.203.178 - Public<br>
-            142.250.37.209 - Public<br>
-            209.85.252.117 - Public<br>
-            142.250.186.195 – Public</p>
-          
-          <h3>www.lodman.pl</h3>
-            <p>10.128.0.1 - Private<br>
-            192.168.222.1 - Private<br>
-            212.51.207.81 - Public<br>
-            212.51.208.217 - Public<br>
-            212.191.92.141 - Public<br>
-            212.51.192.44 - Public<br>
-            212.191.2.25 – Public</p>
-      </section>
-    
+      <p><strong>Class B</strong></p>
+      <p>
+        Class B IP address always has its first bits as 10, next 14 bits as a
+        network address and following 16 bits as the host address. This means
+        that it allows 2^14 networks and 2^16 hosts per network. The range of IP
+        addresses is 128.0.0.0 to 191.255.255.255. This class of IP address is
+        used for a medium network like multinational companies.
+      </p>
+
+      <p><strong>Class C</strong></p>
+      <p>
+        Class C IP address always has its first bits as 110, next 21 bits as a
+        network address and following 8 bits as the host address. This means
+        that it allows 2^21 networks and 2^8 hosts per network. The range of IP
+        addresses is the first block from 192.0.0.0 to 192.0.0.255 and the last
+        block from 223.255.255.0 to 223.255.255.255. This class is used for a
+        small network such as small companies or colleges.
+      </p>
+
+      <p><strong>Class D</strong></p>
+      <p>
+        Class D IP address always has its first bits as 1110. There is no
+        segregation of host and network addresses. It allows multicast which
+        means a datagram directed to multiple hosts.
+      </p>
+
+      <p><strong>Class E</strong></p>
+      <p>
+        The address begins with 1111. It is reserved for future use, research,
+        and development purpose.
+      </p>
+
+      <h3>1.4 Network mask</h3>
+      <p>
+        Subnet mask is a 32-bit number created by setting host bits to all 0s
+        and setting network bits to all 1s. In this way, the subnet mask
+        separates the IP address into the network and host addresses.
+      </p>
+      <p>
+        Mask specifies how many of network addresses are available for the
+        hosts. A subnet mask is like an IP address, but for only internal usage
+        within a network. Routers use subnet masks to route data packets to the
+        right place. Subnet masks are not indicated within data packets
+        traversing the Internet — those packets only indicate the destination IP
+        address, which a router will match with a subnet.
+      </p>
+      <p>
+        The “255” address is always assigned to a broadcast address, and the “0”
+        address is always assigned to a network address. Neither can be assigned
+        to hosts, as they are reserved for these special purposes.
+      </p>
+
+      <h3>1.5 Routing table</h3>
+      <p>
+        It is a set of data stored in router or other network host; stores
+        information about routes to other network destinations and about
+        arrangements of links and nodes around itself
+      </p>
+
+      <h3>1.6 Default gateway</h3>
+      <p>
+        It is a node in a computer network using the Internet protocol suite
+        that serves as the forwarding host (router) to other networks when no
+        other route specification matches the destination IP address of a
+        packet.
+      </p>
+      <p>
+        Packets are sent here, when their destination does not match addresses
+        from the same subnet. It makes it possible for devices in one network to
+        communicate with devices in another network. If a computer, for example,
+        requests a web page, the request goes through the default gateway before
+        exiting the local network (LAN) to reach the internet. We can think of
+        it as of an intermediate device between the local network and the
+        internet. The default gateway transfers internal data to the internet
+        and back again.
+      </p>
+
+      <h3>1.7 Broadcast</h3>
+      <p>
+        The first and last addresses within network, cannot be assigned to
+        hosts. They are used for broadcasting - sending packet to all hosts
+        within network simultaneously. A special address is required to carry
+        out the procedure, which replaces the recipient addresses in question.
+        This broadcast IP is of particular use if the addresses of the
+        individual network users are not known.
+      </p>
+
+      <h3>1.8 Subnet address</h3>
+      <p>
+        It is a part of IP address and is used to identify a device from a given
+        subnetwork within other subnetworks. It allows an autonomous system made
+        up of multiple networks to share the same Internet address.
+      </p>
+
+      <h3>1.9 Private network address</h3>
+      <p>
+        It is an IP address of single device inside network. It is assigned to
+        all hosts by router, usually using DHCP protocol.
+      </p>
+
+      <h3>1.10 Network address translation</h3>
+      <p>
+        The idea of NAT is to allow multiple devices to access the Internet
+        through a single public address. To achieve this, the translation of a
+        private IP address to a public IP address is required. Network Address
+        Translation (NAT) is a process in which one or more local IP address is
+        translated into one or more Global IP address and vice versa in order to
+        provide Internet access to the local hosts.
+      </p>
+
+      <hr />
+      <h2>Practical Part</h2>
+
       <section>
-          <h2>2.1.8.Check ip address and physical address of your host using ipconfig</h2>
-          <h4>In order to check the IP address and physical address we used <i>ipconfig /all</i> command.</h4>
-            <p>Ip address: 192.168.153.1<br>
-            Physical address (MAC address): 08-6A-C5-F8-17-95</p>
-          <figure>
-            <img src="./screenshots_lab3/fig1.6.png" alt="ipconfig command results" />
-            <figcaption>Fig. 1. Results of the command 'ipconfig /all' used to find IP address and physical address.</figcaption>
-          </figure>
+        <h2>2.1. Use ping, pathping, tracert to the following hosts:</h2>
+
+        <h3>2.1.1. Computer in a local network:</h3>
+        <p>Results for a computer in a local network</p>
+        <figure>
+          <img
+            src="./screenshots/fig1.png"
+            alt="Results for a computer in a local network"
+          />
+          <figcaption>
+            Fig. 1. Results of commands for a computer in a local network
+          </figcaption>
+        </figure>
       </section>
+
+      <section>
+        <h3>2.1.2. www.onet.pl:</h3>
+        <p>Results for www.onet.pl</p>
+        <figure>
+          <img src="./screenshots/fig2.png" alt="Results for www.onet.pl" />
+          <figcaption>Fig. 2. Results of commands for www.onet.pl</figcaption>
+        </figure>
+      </section>
+
+      <section>
+        <h3>2.1.3. www.google.com:</h3>
+        <p>Results for www.google.com</p>
+        <figure>
+          <img src="./screenshots/fig3.png" alt="Results for www.google.com" />
+          <figcaption>
+            Fig. 3. Results of commands for www.google.com
+          </figcaption>
+        </figure>
+      </section>
+
+      <section>
+        <h3>2.1.4. www.google.pl:</h3>
+        <p>Results for www.google.pl</p>
+        <figure>
+          <img src="./screenshots/fig4.png" alt="Results for www.google.pl" />
+          <figcaption>Fig. 4. Results of commands for www.google.pl</figcaption>
+        </figure>
+      </section>
+
+      <section>
+        <h3>2.1.5. www.lodman.pl:</h3>
+        <p>Results for www.lodman.pl</p>
+        <figure>
+          <img src="./screenshots/fig5.png" alt="Results for www.lodman.pl" />
+          <figcaption>Fig. 5. Results of commands for www.lodman.pl</figcaption>
+        </figure>
+      </section>
+      <section>
+        <h3>
+          2.1.6 Identify physical location of abovementioned servers (search for
+          tools in the Internet)
+        </h3>
+        <h4>
+          In order to find the physical location of the servers, we used the
+          website:
+          <a href="https://www.iplocation.net/ip-lookup" target="_blank"
+            >https://www.iplocation.net/ip-lookup</a
+          >
+        </h4>
+        <h4>Computer in a local network</h4>
+        <figure>
+          <img
+            src="./screenshots/fig6.png"
+            alt="physical location of server - computer in local network"
+          />
+          <figcaption>
+            Fig. 6. Computer in a local network - information about the physical
+            location of the server.
+          </figcaption>
+        </figure>
+        <h4>www.onet.pl</h4>
+        <figure>
+          <img
+            src="./screenshots/fig7.png"
+            alt="physical location of server - www.onet.pl"
+          />
+          <figcaption>
+            Fig. 7. www.onet.pl - information about the physical location of the
+            server.
+          </figcaption>
+        </figure>
+        <h4>www.google.com</h4>
+        <figure>
+          <img
+            src="./screenshots/fig8.png"
+            alt="physical location of server - www.google.com"
+          />
+          <figcaption>
+            Fig. 8. www.google.com - information about the physical location of
+            the server.
+          </figcaption>
+        </figure>
+        <h4>www.google.pl</h4>
+        <figure>
+          <img
+            src="./screenshots/fig9.png"
+            alt="physical location of server - cwww.google.pl"
+          />
+          <figcaption>
+            Fig. 9. www.google.pl - information about the physical location of
+            the server.
+          </figcaption>
+        </figure>
+        <h4>www.lodman.pl</h4>
+        <figure>
+          <img
+            src="./screenshots/fig10.png"
+            alt="physical location of server - www.lodman.pl"
+          />
+          <figcaption>
+            Fig. 10. www.lodman.pl - information about the physical location of
+            the server.
+          </figcaption>
+        </figure>
+      </section>
+
+      <section>
+        <h3>
+          2.1.7 When using tracert assign consecutive hops to private/public
+          network addresses.
+        </h3>
+
+        <p>
+          <strong>Private IP Addresses</strong><br />
+          They are not routed on the internet and are meant for local network
+          use.<br />
+          Common private IP ranges include:<br />
+          10.0.0.0 to 10.255.255.255<br />
+          172.16.0.0 to 172.31.255.255<br />
+          192.168.0.0 to 192.168.255.255
+        </p>
+
+        <p>
+          <strong>Public IP Addresses:</strong><br />
+          Any IP address not falling within the above private ranges.<br />
+          Routable on the global internet.<br />
+          Used for external network and internet access.
+        </p>
+        <br />
+
+        <h4>Computer in a local network</h4>
+        <p>192.168.153.1 - private</p>
+
+        <h4>www.onet.pl</h4>
+        <p>
+          10.128.0.1 - Private<br />
+          192.168.222.1 - Private<br />
+          212.51.207.81 - Public<br />
+          212.51.208.217 - Public<br />
+          212.191.92.141 - Public<br />
+          212.191.224.5 - Public<br />
+          212.162.10.81 - Public<br />
+          4.69.159.58 – Public
+        </p>
+
+        <h4>www.google.com</h4>
+        <p>
+          10.128.0.1 - Private<br />
+          192.168.222.1 - Private<br />
+          212.51.207.81 - Public<br />
+          212.51.208.217 - Public<br />
+          212.191.92.141 - Public<br />
+          212.191.224.5 - Public<br />
+          72.14.203.178 - Public<br />
+          142.250.37.193 - Public<br />
+          209.85.253.225 - Public<br />
+          142.250.203.142 – Public
+        </p>
+
+        <h4>www.google.pl</h4>
+        <p>
+          10.128.0.1 - Private<br />
+          192.168.222.1 - Private<br />
+          212.51.207.81 - Public<br />
+          212.51.208.217 - Public<br />
+          212.191.92.141 - Public<br />
+          212.191.224.5 - Public<br />
+          72.14.203.178 - Public<br />
+          142.250.37.209 - Public<br />
+          209.85.252.117 - Public<br />
+          142.250.186.195 – Public
+        </p>
+
+        <h4>www.lodman.pl</h4>
+        <p>
+          10.128.0.1 - Private<br />
+          192.168.222.1 - Private<br />
+          212.51.207.81 - Public<br />
+          212.51.208.217 - Public<br />
+          212.191.92.141 - Public<br />
+          212.51.192.44 - Public<br />
+          212.191.2.25 – Public
+        </p>
+      </section>
+
+      <section>
+        <h3>
+          2.1.8.Check ip address and physical address of your host using
+          ipconfig
+        </h3>
+        <p>
+          In order to check the IP address and physical address we used
+          <i>ipconfig /all</i> command.
+        </p>
+        <p>
+          Ip address: 192.168.153.1<br />
+          Physical address (MAC address): 08-6A-C5-F8-17-95
+        </p>
+        <figure>
+          <img src="./screenshots/fig11.png" alt="ipconfig command results" />
+          <figcaption>
+            Fig. 11. Results of the command 'ipconfig /all' used to find IP
+            address and physical address.
+          </figcaption>
+        </figure>
+      </section>
+    </div>
   </body>
 </html>
